@@ -62,7 +62,7 @@ document.getElementById('1-tb-storage-button').addEventListener('click', functio
 
 document.getElementById('instant-delivery-button-0').addEventListener('click', function () {
 
-  cost('delivery-zero', 20)
+  cost('delivery', 0)
 })
 
 document.getElementById('instant-delivery-button').addEventListener('click', function () {
