@@ -1,0 +1,21 @@
+
+.custom-button{
+  border: solid 2px;
+}
+.custom-button:hover{
+  color: bisque;
+  background-color: black;
+  border: solid 2px yellowgreen;
+  transform: scale(1.1);
+  transition: transform 5s;
+
+}
+
+hr{
+  padding: 3px;
+}
+
+.customized-apply-button{
+  background-color: palevioletred;
+  color: white;
+}
