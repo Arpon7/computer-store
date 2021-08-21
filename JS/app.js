@@ -27,6 +27,7 @@ function calculateTotal() {
   const grandTotal = document.getElementById('grand-total');
   grandTotal.innerText = totalCost
 
+
   return totalCost;
 
 }
@@ -76,9 +77,9 @@ document.getElementById('instant-delivery-button').addEventListener('click', fun
 document.getElementById('pomo-button').addEventListener('click', function () {
 
   const pomoInput = document.getElementById('pomo-input').value;
-  const pomoCode = 'stevekaku'
 
-  if (pomoInput == pomoCode) {
+
+  if (pomoInput == 'stevekaku') {
     const beforeDiscount = calculateTotal()
     const withDiscount = beforeDiscount - (beforeDiscount * .2);
 
@@ -86,6 +87,7 @@ document.getElementById('pomo-button').addEventListener('click', function () {
     const grandTotal = document.getElementById('grand-total');
     grandTotal.innerText = withDiscount;
 
+    document.getElementById('pomo-input').value = ''
   }
 
   else {
@@ -94,6 +96,7 @@ document.getElementById('pomo-button').addEventListener('click', function () {
 
     const container = document.getElementById('container');
     container.appendChild(errorText)
+    document.getElementById('pomo-input').value = ''
   }
 
 })
